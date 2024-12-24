@@ -1,14 +1,16 @@
 import {Inter} from "next/font/google";
 import "./globals.css";
 import {Providers} from "@/app/providers";
+import Appbar from "@/app/components/Appbar";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
     metadataBase: new URL('https://pablo-marte.com/'),
-    title: 'Pablo Marte | Official Website',
+    title: 'Pablo Marte Official Website - News, Music, Tours & More',
     description: 'Official website of Pablo Marte. Mexican musician.',
-    applicationName: 'Pablo Marte | PWA',
+    applicationName: 'Pablo Marte Official',
     referrer: 'origin-when-cross-origin',
     apple: '/assets/icons/apple-touch-icon.png',
     keywords: ['Pablo Marte, Artista, Artista Musical, Cantante, Musico, Compositor Mexicano, Compositor, Pablo, Marte, Productor, Tiempo de Querer, Nightingale, Petricor, Luminiscencia, Paisaje, Lena al fuego'],
@@ -19,10 +21,9 @@ export const metadata = {
     },
     manifest: '/manifest.json',
     openGraph: {
-        title: 'Pablo Marte | Official Website',
+        title: 'Pablo Marte Official Website - News, Music, Tours & More',
         description: 'Official website of Pablo Marte. Mexican musician.',
-        url: 'https://pablo-marte.com/',
-        siteName: 'Pablo Marte | Official Website',
+        url: 'https://pablo-marte.com/', siteName: 'Pablo Marte Official Website - News, Music, Tours & More',
         images: '/assets/icons/android-chrome-512x512.png',
         locale: 'en_MX',
         type: 'website',
@@ -50,11 +51,13 @@ export const metadata = {
 export default function RootLayout({children}) {
 
     return (<html lang={'es'}>
-    <body className={inter.className}>
+    <body className={`bg-[#2380D1] ${inter.className}`}>
     <Providers>
-        <main className={'text-foreground bg-background relative'}>
+        <Appbar/>
+        <main className={'min-h-[75vh] py-4'}>
             {children}
         </main>
+        <Footer/>
     </Providers>
     </body>
     </html>);

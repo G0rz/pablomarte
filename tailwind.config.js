@@ -10,19 +10,25 @@ module.exports = {
     addCommonColors: true,
     extend: {
         animation: {
-            fade: 'fadeOut 3s ease-in-out',
-        }, keyframes: theme => ({
-            fadeOut: {
-                '0%': {opacity: 0}, '100%': {opacity: 1},
+            fade: 'fadeIn 1.5s ease-in-out',
+            fill: 'fillIn 3s 1s forwards',
+        },
+        keyframes: {
+            fadeIn: {
+                from: {opacity: 0},
+                to: {opacity: 1},
             },
-        }), fontFamily: {
+            fillIn: {
+                '100%': {backgroundPosition: 'left', backgroundSize: '200% 100%'},
+            },
+        }, fontFamily: {
             sans: ["var(--font-sans)"], mono: ["var(--font-mono)"],
         },
     },
     darkMode: "class",
     themes: {
         colors: {
-            background: "#0D001A", foreground: "#FFFFFF", primary: {
+            background: "#2380D1", foreground: "#FEFEFE", primary: {
                 100: "#D2F2FC",
                 200: "#A7E0FA",
                 300: "#78C5F1",
@@ -77,7 +83,7 @@ module.exports = {
             }, focus: "#2380D1",
         }, "dark": {
             colors: {
-                background: "#0D001A", foreground: "#ffffff", primary: {
+                background: "#2380D1", foreground: "#FEFEFE", primary: {
                     50: "#3B096C",
                     100: "#520F83",
                     200: "#7318A2",
@@ -99,7 +105,9 @@ module.exports = {
                 },
             },
         },
-    },
-    plugins: [nextui()],
+        variants: {
+            fill: ['hover', 'focus'],
+        },
+    }, plugins: [nextui()],
     important: true
 };
