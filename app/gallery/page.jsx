@@ -1,5 +1,4 @@
 'use client'
-import Appbar from "@/app/components/Appbar";
 import {Image} from "@nextui-org/react";
 import {useEffect} from "react";
 import LightGallery from 'lightgallery/react';
@@ -8,7 +7,6 @@ import lgVideo from 'lightgallery/plugins/video';
 import fjGallery from 'flickr-justified-gallery';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
-import Footer from "@/app/components/Footer";
 
 const photos = [{
     dataLgSize: "",
@@ -101,7 +99,10 @@ const Page = () => {
         <LightGallery
             plugins={[lgZoom, lgVideo]}
             mode="lg-fade"
+            cssEasing={'ease'}
+            speed={600}
             pager={false}
+            appendSubHtmlTo={'.lg-item'}
             thumbnail={true}
             galleryId={'around the world'}
             autoplayFirstVideo={false}
