@@ -14,8 +14,8 @@ const Page = () => {
             />
         </div>
         <p className={'text-lg w-5/12'}>
-            En 2019 conocí la música por "casualidad" o al menos eso creo... a partir de ese momento comencé a
-            componer sin tener conocimientos musicales y en noviembre de ese mismo año nació "Petricor", una canción
+            En 2019 conocí la música por casualidad o al menos eso creo... a partir de ese momento comencé a
+            componer sin tener conocimientos musicales y en noviembre de ese mismo año nació Petricor, una canción
             creada totalmente de mi intuición, de mi experiencia y de mi sentir. Me enamoré de ese proceso de
             plasmar cosas increíbles como el sentir del ser humano en fragmentos musicales. Pablo Marte hace alusión
             a la frase para amarte y si estas escuchando estas canciones y más aun leyendo esto probablemente creas

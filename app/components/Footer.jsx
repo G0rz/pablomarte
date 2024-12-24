@@ -32,7 +32,7 @@ const Footer = () => {
             return <div key={index}>
                 <Tooltip showArrow={true} content={social.name}>
                     <Button as={Link} href={social.link} isExternal isIconOnly
-                            color="foreground"
+                            color={'foreground'}
                             aria-label={social.name}
                             className={'mx-1'}>
                         {social.icon}
@@ -40,7 +40,7 @@ const Footer = () => {
                 </Tooltip>
             </div>;
         })}
-        <p className={'w-full my-2'}>Copyright © <Link color={"foreground"} isBlock isExternal showAnchorIcon
+        <p className={'w-full my-2'}>Copyright © <Link color={'foreground'} isBlock isExternal showAnchorIcon
                                                        href={'https://github.com/G0rz'}
                                                        aria-current={'G0rz'}>G0rz</Link> {new Date().getFullYear()}. All
             rights reserved.</p>
