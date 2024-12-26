@@ -49,7 +49,7 @@ export const metadata = {
 }
 
 export default function RootLayout({children}) {
-
+    
     return (<html lang={'es'}>
     <body className={`bg-[#2380D1] ${inter.className}`}>
     <Providers>

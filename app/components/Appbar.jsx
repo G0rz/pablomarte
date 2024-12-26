@@ -24,7 +24,7 @@ export default function Appbar() {
                     startContent={<Image
                         alt="logo"
                         className={'object-cover w-10 rounded-full'}
-                        src={'/assets/images/pablo_marte_icon.jpg'}
+                        src={'/assets/images/pablo_marte_icon.webp'}
                     />}
             >
                 PABLO MARTE
@@ -40,7 +40,7 @@ export default function Appbar() {
                         startContent={<Image
                             alt="logo"
                             className={'object-cover w-10 rounded-full'}
-                            src={'/assets/images/pablo_marte_icon.jpg'}
+                            src={'/assets/images/pablo_marte_icon.webp'}
                         />}
                 >
                     PABLO MARTE
@@ -52,7 +52,7 @@ export default function Appbar() {
                           color={'foreground'}
                           href={item.link}
                           isBlock
-                          aria-current={item.name}>
+                       >
                         {item.name}
                     </Link>
                 </NavbarItem>

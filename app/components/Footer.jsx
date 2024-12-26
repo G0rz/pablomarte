@@ -42,7 +42,7 @@ const Footer = () => {
         })}
         <p className={'w-full my-2'}>Copyright © <Link color={'foreground'} isBlock isExternal showAnchorIcon
                                                        href={'https://github.com/G0rz'}
-                                                       aria-current={'G0rz'}>G0rz</Link> {new Date().getFullYear()}. All
+                                                       >G0rz</Link> {new Date().getFullYear()}. All
             rights reserved.</p>
     </div>);
 };
